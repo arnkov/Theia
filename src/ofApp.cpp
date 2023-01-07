@@ -16,7 +16,8 @@ void ofApp::setup(){
 	setupLua();
 
 	//load your script
-	lua.runScript(ls, "scripts/" + gui->luaFileNames[gui->luaFileIndex]);
+	std::string currentScript = "scripts/" + gui->luaFileNames[gui->luaFileIndex];
+	lua.runScript(ls, currentScript);
 	//call a lua function
 	lua.fnSetup(ls);
 
@@ -359,7 +360,8 @@ void ofApp::loadLuaScript() {
 	lua.clearLua(ls);
 	lua_close(ls);
 	setupLua();
-	lua.runScript(ls, "scripts/" + gui->luaFileNames[gui->luaFileIndex]);
+	std::string currentScript = "scripts/" + gui->luaFileNames[gui->luaFileIndex];
+	lua.runScript(ls, currentScript);
 	lua.fnSetup(ls);
 	gui->bReloadLua = false;
 }
