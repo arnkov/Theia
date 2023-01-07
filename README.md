@@ -20,3 +20,9 @@
  Visual Studio users have to open the .sln, navigate to ofxLuaaa/libs/lua-5.4.4, select the .c files, right click, properties, c/c++, advanced, compile as C.
  
  Windows users can also download prebuilt binaries from [here](https://arnkov.itch.io/theia).
+
+Features:
+-Video playback and effects
+-Shader livecoding
+-Lua livecoding
+-Midi, OSC and sound input
