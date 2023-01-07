@@ -1,0 +1,36 @@
+gives you control over which input you might want to use.
+And some other stuff, I didn't know where to put.
+
+"Fullscreen" toggles the window mode of the performace window.
+
+"useSound" toggles whether or not the app tries using sound input.
+On Windows I highly recommend using ASIO, on Linux, you should try JACK.
+Accordingly you can choose the device number.
+Changes to the device number only take effect, if you restart the sound listener.
+This might or might not work, depending on your setup.
+Please check the console for more info, if something doesn't work.
+
+"onsetMinThreshold" determines how loud the sound should be for the App, 
+to trigger onset detection and "onsetDecayRate" let's you control, 
+how long the onset will be set to "true". 
+It will set the boolean "bang" in your scripts to "true".
+In your custom shaders it will set the uniform "u_bang" to 1.0.
+If you checked "randomColour" it will also set new colours.
+
+"useOSC" let's you use OSC messages to control Theia on port 8000.
+For now, the port can only be changed in the source code.
+See: guiApp.h line 13
+This will be subject to changes as soon as possible.
+
+"useMIDI" does the same for Midi messages.
+
+"showInfo" opens a small panel with Informations about whats going in with the sound.
+MIDI and OSC information will be supported soon.
+
+"globalRandomness" let's you control, how often things are triggered,
+if Theia detected an onset. If it's set to 1.0 it will trigger every time,
+which might sometimes be a bit much.
+There used to be more parameters chained to "globalRandom",
+maybe they will come back, or this will be moved somewhere else.
+In addition the app has a separate kick, snare and hat detection.
+More about that later.

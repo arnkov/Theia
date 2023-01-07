@@ -1,0 +1,42 @@
+Theia is a small VJ-app, built on top of openFrameworks,
+designed to be as lighweight as possible.
+
+It is a tool specificly written to fit my needs, so it might or might not work for you.
+I'm open to proposals or feature requests, but please understand,
+that I won't feel obliged, to implement every proposal.
+
+It's tested on Windows and Ubuntu, but it should work on Mac as well.
+Unfortunetly it won't work on Raspberry.
+It's very much a work in progress and I'm actually not a programmer,
+so please don't expect too much.
+
+Features:
+-sound input
+-osc input
+-midi input
+-video playback and effects
+-shader live coding
+-lua live coding
+
+Known issues:
+-Files might get loaded in an unexpected order on Linux.
+(Help appreciated)
+-If you dock this window at the "MAIN CONTROLS" window and
+then close it, you can suddenly close the main Window too,
+which will crash Theia. Should easily be fixed, but isn't
+my top priority right now. Just don't.
+-shader file names appear twice in the dropdown,
+since there is a .vert and a .frag for each,
+but oF doesn't need the extension, to load one.
+-for now, drawing something doesn't block
+drawing something else. The last thing, that get's
+called in Theia's "draw" method, will be drawn on top.
+-"feedback" doesn't work on videos, will be fixed in next release.
+If you reaaaaally needed it, you could propably use a video with only a
+really small alpha value as video 2 and use the alpha-blendMode.
+
+TODO:
+-extend lua bindigs
+-reimplement automatic shader reloading
+-implement automatic lua script reloading
+-add control over font size

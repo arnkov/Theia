@@ -1,0 +1,68 @@
+Have a look at the example script, to see how it works.
+For further information have a look at the openFrameworks docs.
+Except specified otherwise, the arguments are numbers.
+For now the Lua bindings provide to pure minimum to make something nice.
+All of this will be subject to changes, but for now:
+
+draw:noFill()
+draw:Fill()
+draw:setCircleResolution(res)
+draw:setSphereResolution(res)
+draw:setLineWidth(width)
+draw:drawCircle(x, y, radius)
+draw:drawSphere(x, y, z, size)
+draw:drawIcoSphere(x, y, z, size)
+draw:drawBox(x, y, z, size)
+draw:drawRectangle(x, y, w, h)
+draw:drawPlane(x, y, z, w, h)
+draw:drawCylinder(x, y, z, rad, h)
+draw:drawLine(x1, y1, z1, x2, y2, z2)
+
+color:setColor(r, g, b, a) -- range 0 - 255
+color:setFloatColor(r, g, b, a) -- range 0.0 - 1.0
+color:setBackgroundColor(r, g, b) -- range 0 - 255
+color:clear(r, g, b, a) -- range 0 - 255
+
+fbo:allocateFbo(x, y)
+fbo:clearFbo()
+fbo:beginFbo()
+fbo:endFbo()
+fbo:drawFbo(x, y)
+
+cam:beginCam()
+cam:endCam()
+cam:lookAt(x, y, z)
+cam:setPosition(x, y, z)
+
+utils:getWidth()
+utils:getHeight()
+utils:getElapsedTime()
+
+math:noise(x, y) 
+math:signedNoise(x, y)
+math:random(x) -- returns random number between 0 and x
+math:random(x, y) -- returns random number between x and y
+math:lerp(start, stop, amt) -- linear interpolation
+
+material:setPBR(bool)
+material:begin()
+material:end()
+material:setDiffuseColor(r, g, b) --range 0.0 - 1.0
+material:setRoughness(x)
+material:setShininess(x)
+
+light:enableLighting()
+light:disableLighting()
+light:enable()
+light:disable()
+light:setup()
+light:setPosition(x, y, z)
+
+gl:enableDepthTest()
+gl:disableDepthTest()
+gl:pushMatrix()
+gl:popMatrix()
+gl:translate(x, y, z)
+gl:rotateX(x)
+gl:rotateY(y)
+gl:rotateZ(z)

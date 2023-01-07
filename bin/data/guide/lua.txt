@@ -1,0 +1,23 @@
+Lua is a nice little scripting language, which is very easy to learn.
+You can include your own scetches by dropping them into "data/scripts".
+For now, the lua-api consists of the standard modules and some bindings to openFrameworks.
+The whole shabang is to be subject of changes.
+If you want to know, how it works, have a look at example.lua and ofBindings.h.
+You can simply add your own bindings, just edit ofBindings.h and don't forget to
+add your new stuff to ofApp.h/.cpp.
+
+The actual buttons and sliders should be self documenting.
+Please note, that for now you will have to declare at least
+bang (bool)
+mangitude (number)
+kick (number)
+snare (number)
+hat (number)
+as there are no error callbacks and do possibilities to check, if a variable exists at the moment.
+These parameters will automatically set by Theia and you can use them, to drive things in your scetch.
+
+Also you need to use at least these functions:
+function setup(): gets called if the script is loaded
+function update(): gets called in the "update" method of Theia
+function draw(): gets called in the "draw" method
+function exit(): gets called if you load a new script, or close Theia.

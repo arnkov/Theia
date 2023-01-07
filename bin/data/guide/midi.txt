@@ -1,0 +1,16 @@
+The way Theia uses Midi is currently being reworked.
+For now, you can map the bare minimum to some control knobs
+using the xml file under data/settings.
+
+button01 - 03 lets you control whether you want to draw video,
+lua scetches or shaders.
+
+note01 - 03 is mapped to kick, snare and hat.
+You can specify your drum channel and then choose the corresponding notes.
+This will only take effect, if the app is not listening to sound.
+
+If you are not shure, which buttons are which, you can have a look under "SHOW INFO".
+For more control you might want to use tools like for example MidiGyver, 
+to convert your messages to OSC. And then proceed with the standard osc-mappings.
+
+Changes in the specified device will only take effect after restarting the midi listener.

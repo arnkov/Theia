@@ -1,0 +1,8 @@
+ofxBeat
+ofxHapPlayer
+ofxImGui
+ofxLuaaa
+ofxMidi
+ofxOsc
+ofxPostGlitch
+ofxXmlSettings

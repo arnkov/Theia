@@ -1,0 +1,7 @@
+Some other built in shaders, which are not actually glitchy.
+
+"enableFXAA" tries to smooth out ugly edges of your geometry.
+
+"enableBloom" activates a shader, which tries to imitate the effect you might sometimes notice,
+if you're looking at light sources or very bright surfaces. It doesn't look amazing for now,
+but it can add funky artifacts, if you're using the glitch shaders and the "feedback" at the same time.

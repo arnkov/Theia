@@ -1,0 +1,22 @@
+A shader is a small programm directly telling your graphics card, what to do.
+There are some built in shaders, which make some glitch effects.
+You can find them under data/shaders/gl3.
+don't be afraid to modify them.
+
+"shaderRandomness" controls, how often parameters are triggered by the onset detection.
+
+"randomGlitch": whether or not glitches should be triggered by onset.
+
+"randColourGlitch": same as above.
+
+"randomFbo": All the videos and Lua scripts are drawn into a frame buffer object.
+It's simply a way, to store pixels to access them later, for example in the glitch shaders.
+If the fbo doesn't get cleared you will be able to see some from the previous frames,
+if nothing get's drawn on top of them. For example, if you're using Hap-Alpha and some masked video.
+If checked, it will only be cleared, if the last onset is a few seconds in the past.
+
+"clearFbo": whether or not the Fbo get's cleared every frame.
+Get's overridden by "randomFbo".
+
+"feedback" is not actually a feedback. It will cause older pixels, to slowly disappear,
+if you do not clear the fbo andf don't draw something on top.

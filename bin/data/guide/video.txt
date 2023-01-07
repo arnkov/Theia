@@ -1,0 +1,19 @@
+Videos are loaded from the data/movies directory.
+
+"useSpout" used to have some effect for Windows users. Will be back soon.
+
+"useVideo": to make this work, you need to encode your videos as Hap.
+Hap-Q is not supported. The easiest tool I know of is this one:
+https://www.shutterencoder.com/en/
+
+"palidrome" changes the playmode from a normal loop to playing back and forth.
+
+"blendMode" changes the blend mode:
+0 none
+1 add
+2 multiply
+3 substract
+4 alpha
+If the mode is 0, you will only be able to see the SECOND video,
+because it is drawn on top of the first. 
+More blend modes are to be added.

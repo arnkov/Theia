@@ -1,0 +1,52 @@
+<midi>
+    <knob01>10</knob01>
+    <knob02>74</knob02>
+    <knob03>71</knob03>
+    <knob04>76</knob04>
+    <knob05>77</knob05>
+    <knob06>93</knob06>
+    <knob07>73</knob07>
+    <knob08>75</knob08>
+    <knob09>114</knob09>
+    <knob10>18</knob10>
+    <knob11>19</knob11>
+    <knob12>16</knob12>
+    <knob13>17</knob13>
+    <knob14>91</knob14>
+    <knob15>79</knob15>
+    <knob16>72</knob16>
+
+	<button01>20</button01>
+	<button02>21</button02>
+	<button03>22</button03>
+	<button04>23</button04>
+	<button05>24</button05>
+	<button06>25</button06>
+	<button07>26</button07>
+	<button08>27</button08>
+	<button09>28</button09>
+	<button10>29</button10>
+	<button11>30</button11>
+	<button12>31</button12>
+	<button13>52</button13>
+	<button14>53</button14>
+	<button15>54</button15>
+	<button16>55</button16>
+
+	<note01>44</note01>
+	<note02>45</note02>
+	<note03>46</note03>
+	<note04>47</note04>
+	<note05>48</note05>
+	<note06>49</note06>
+	<note07>50</note07>
+	<note08>51</note08>
+	<note09>36</note09>
+	<note10>37</note10>
+	<note11>38</note11>
+	<note12>39</note12>
+	<note13>40</note13>
+	<note14>41</note14>
+	<note15>42</note15>
+	<note16>43</note16>
+</midi>

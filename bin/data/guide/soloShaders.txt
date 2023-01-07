@@ -1,0 +1,17 @@
+Here you can acces some uniforms passed to your custom shaders.
+Have a look at the example shader, if you want to know, what's going on.
+There are also lots of good ressources out there.
+
+"u_resolution" does not appear in the gui. It is set automatically.
+
+"u_time" same as above.
+
+"posX/posY" will be accessible through a "uniform vec2 u_pos", if you need them.
+
+"shaderVal0/1" are accessible as "u_val0" and "u_val1", just in case you need something else.
+
+If you're using sound input, you can also use:
+"uniform vec3 u_beat": will return if there is a kick(.x), a snare(.y) or a hat(wanna guess?).
+"u_bang" will return 1.0, if Theia detected any onset, else 0.0. I'd recommend using this for the kick.
+"u_magnitude" will return the magnitude.
+"u_rms" will return the rms. You can scale it with the rmsMultiplier.

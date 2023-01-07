@@ -1,0 +1,45 @@
+If you activated OSC, Theia will listen to messages on port 8000,
+so you can use it together with tool like touch-osc.
+Please note, that there is no error handling for exceeding the range of the args.
+There's a small python script under data/python, which you can use, to test it.
+Just install python and pip install python-osc.
+Messages and arguments are:
+
+/bSound(bool)
+/deviceNumber(int)
+/gain(float)
+/decayRate(float)
+/bMidi(bool)
+/portNumber(int)
+/bShowInfo(bool)
+/globalRand(float)
+/bSpout(bool) -- will be back soon
+/bSpoutSettings(bool)
+/bVideo(bool)
+/blendig(int)
+/bloadVideo(bool)
+/bToggleLoop(bool)
+/shaderRandom(float)
+/bRandGlitc(bool)
+/glitchNum(int)
+/bRandColGlitch(bool)
+/glitchCol(int)
+/bRandFbo(bool)
+/bClearFbo(bool)
+/bFeedback(bool)
+/fbValue(float)
+/bRandCol(bool)
+/r1(int) -- same for g1, b1, a1, r2, g2, b2, a2
+/bLua(bool)
+/bReloadLua(bool)
+/bSoloShader(bool)
+/rmsMultiplier(float)
+/bShowCode(bool)
+/shaderVal0(float)
+/shaderVal1(float)
+/bFxaa(bool)
+/bBloom(bool)
+/bloomSteps(int)
+/bloomSeparation(float)
+/bloomThreshold(float)
+/bloomAmount(float)

@@ -1,0 +1,17 @@
+# Theia
+ ...is a tiny vj app, designed to be lightweight.
+ It's written, to fit my personal needs, so you might or might not find it useful.
+ 
+ # Building
+ Theia is currently developed against the nightly openFrameworks releases, so grab a copy from the bottom of https://openframeworks.cc/download/ and build it if nescessary.
+ 
+ Also you will need to clone the following repositories into the addons folder:
+ #### [ofxBeat](https://github.com/darrenmothersele/ofxBeat) 
+ #### [ofxHapPlayer](https://github.com/bangnoise/ofxHapPlayer)
+ #### [ofxImGui](https://github.com/jvcleave/ofxImGui)
+ #### [ofxLuaaa](https://github.com/arnkov/ofxLuaaa)
+ #### [ofxMidi](https://github.com/danomatika/ofxMidi)
+ #### [ofxPostGlitch](https://github.com/arnkov/ofxPostGlitch)
+ 
+ Clone this repository into apps/myApps and run the project generator.
+ Under Linux, just navigate to ...apps/myApps/Theia and type "make".
