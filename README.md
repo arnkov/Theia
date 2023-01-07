@@ -3,10 +3,10 @@
  It's written, to fit my personal needs, so you might or might not find it useful.
   
  Features:
- -Video playback and effects
- -Shader livecoding
- -Lua livecoding
- -Midi, OSC and sound input
+ Video playback and effects
+ Shader livecoding
+ Lua livecoding
+ Midi, OSC and sound input
 
  
  # Building
