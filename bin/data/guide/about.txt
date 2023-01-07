@@ -21,6 +21,7 @@ Features:
 Known issues:
 -Files might get loaded in an unexpected order on Linux.
 (Help appreciated)
+-You need to have at least one file in each folder
 -If you dock this window at the "MAIN CONTROLS" window and
 then close it, you can suddenly close the main Window too,
 which will crash Theia. Should easily be fixed, but isn't
