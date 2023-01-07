@@ -21,8 +21,8 @@
  
  Windows users can also download prebuilt binaries from [here](https://arnkov.itch.io/theia).
 
-Features:
--Video playback and effects
--Shader livecoding
--Lua livecoding
--Midi, OSC and sound input
+ Features:
+ -Video playback and effects
+ -Shader livecoding
+ -Lua livecoding
+ -Midi, OSC and sound input
